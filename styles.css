@@ -1,6 +1,7 @@
 .first-ul {
 	border-bottom: 1px solid #000;
 	padding: 10px;
+	padding-left: 20px;
 }
 
 .p-gray {
@@ -9,6 +10,7 @@
 }
 .padding {
 	padding: 10px;
+	padding-left: 20px;
 }
 
 table {
@@ -25,18 +27,18 @@ h1 {
 	text-align: center;
 }
 
+header {
+	font-size: 20px;
+}
+
 h3 {
-	padding-left: 10px;
+	padding-left: 20px;
 	font-family: 'Handlee', sans-serif;
 }
 
 .a-none-decoration {
 	text-decoration: none;
 	color: #000;
-}
-
-div {
-	font-weight: bold;
 }
 
 .reviews {
