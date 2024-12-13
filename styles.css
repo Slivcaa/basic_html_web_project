@@ -1,0 +1,97 @@
+.first-ul {
+	border-bottom: 1px solid #000;
+	padding: 10px;
+}
+
+.p-gray {
+	color: gray;
+}
+.padding {
+	padding: 10px;
+}
+
+table {
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+h1 {
+	font-family: 'Handlee', sans-serif;
+	font-size: 40px;
+	letter-spacing: 4px;
+}
+
+h3 {
+	padding-left: 10px;
+	font-family: 'Handlee', sans-serif;
+}
+
+.a-none-decoration {
+	text-decoration: none;
+	color: #000;
+}
+
+div {
+	font-weight: bold;
+}
+
+.reviews {
+	width: 60%;
+	margin: 0 auto;
+	table-layout: fixed;
+}
+
+@media (max-width: 768px) {
+	header {
+		align-items: flex-start;
+	}
+
+	nav ul {
+		flex-direction: row;
+		gap: 10px;
+	}
+
+	table {
+		display: block;
+	}
+
+	td {
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #000;
+	}
+
+	.reviews {
+		gap: 20px;
+		width: 100%;
+		margin: 0 auto;
+		table-layout: fixed;
+	}
+
+	@media (max-width: 480px) {
+		header {
+			align-items: flex-start;
+			text-align: center;
+		}
+
+		nav ul {
+			width: 100%;
+		}
+
+		.reviews {
+			width: 100%;
+		}
+
+		td {
+			border: none;
+			border-bottom: 1px solid #000;
+			padding: 10px;
+		}
+
+		td:last-child {
+			border-bottom: none;
+		}
+	}
+}
