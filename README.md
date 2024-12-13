@@ -11,8 +11,7 @@ This project demonstrates the HTML structure for a portfolio website. It is desi
 
 2. **Open the Files in a Browser:**
    Navigate to the project folder and open any `.html` file in your web browser. For example:
-   - `index.html` for the homepage.
-   - `projects.html` for the projects page.
+   - `home.html` for the homepage.
    - `articles.html` for the articles page.
    - `contact.html` for the contact page.
 
@@ -23,8 +22,7 @@ This project demonstrates the HTML structure for a portfolio website. It is desi
 
 ```
 project-folder/
-├── index.html      # Homepage
-├── projects.html   # Projects page
+├── home.html      # Homepage
 ├── articles.html   # Articles page
 ├── contact.html    # Contact page
 └── README.md       # Instructions
