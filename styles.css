@@ -5,6 +5,7 @@
 
 .p-gray {
 	color: gray;
+	text-align: center;
 }
 .padding {
 	padding: 10px;
@@ -21,6 +22,7 @@ h1 {
 	font-family: 'Handlee', sans-serif;
 	font-size: 40px;
 	letter-spacing: 4px;
+	text-align: center;
 }
 
 h3 {
