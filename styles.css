@@ -1,16 +1,61 @@
-.first-ul {
-	border-bottom: 1px solid #000;
-	padding: 10px;
+h1 {
+	padding-top: 20px;
+	font-family: 'Handlee', sans-serif;
+	font-size: 40px;
+	letter-spacing: 4px;
+	text-align: center;
+}
+
+.intro {
+	text-align: center;
+}
+
+.projects {
+	padding-top: 20px;
+}
+
+h3 {
+	padding-top: 20px;
 	padding-left: 20px;
+	font-family: 'Handlee', sans-serif;
+}
+
+body {
+	font-family: 'Hind', sans-serif;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: #ffffff;
+}
+
+.header .logo {
+	font-family: 'Handlee', cursive;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+	gap: 15px;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
 }
 
 .p-gray {
 	color: gray;
 	text-align: center;
-}
-.padding {
-	padding: 10px;
-	padding-left: 20px;
 }
 
 table {
@@ -20,82 +65,93 @@ table {
 	table-layout: fixed;
 }
 
-h1 {
-	font-family: 'Handlee', sans-serif;
-	font-size: 40px;
-	letter-spacing: 4px;
-	text-align: center;
+.project-item {
+	border: 1px solid #000;
+	vertical-align: top;
 }
 
-header {
-	font-size: 20px;
+.first-ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
-h3 {
+.first-li {
+	border-bottom: 1px solid #000;
+	padding: 10px;
 	padding-left: 20px;
-	font-family: 'Handlee', sans-serif;
 }
 
-.a-none-decoration {
-	text-decoration: none;
-	color: #000;
+.padding {
+	padding: 10px;
+	padding-left: 20px;
+}
+
+.padding-courses {
+	padding-left: 20px;
 }
 
 .reviews {
-	width: 60%;
 	margin: 0 auto;
 	table-layout: fixed;
+	padding-top: 20px;
+	padding-bottom: 50px;
 }
 
+.reviews .review {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	padding: 0 20px;
+}
+
+.review-item {
+	border: 1px solid #000;
+	padding: 20px;
+	border-radius: 30px;
+	text-align: center;
+	flex: 0 1 250px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px;
+	font-family: 'Handlee', sans-serif;
+	font-weight: 700;
+}
+/* Responsive Design */
 @media (max-width: 768px) {
-	header {
+	.header {
 		align-items: flex-start;
 	}
 
-	nav ul {
-		flex-direction: row;
+	.nav-list {
+		flex-direction: column;
 		gap: 10px;
 	}
-
-	table {
-		display: block;
-	}
-
-	td {
-		display: block;
-		width: 100%;
-		border-bottom: 1px solid #000;
-	}
-
 	.reviews {
 		gap: 20px;
 		width: 100%;
 		margin: 0 auto;
 		table-layout: fixed;
+		height: auto;
+	}
+}
+
+@media (max-width: 480px) {
+	.header {
+		text-align: center;
 	}
 
-	@media (max-width: 480px) {
-		header {
-			align-items: flex-start;
-			text-align: center;
-		}
+	.nav-list {
+		width: 100%;
+	}
 
-		nav ul {
-			width: 100%;
-		}
-
-		.reviews {
-			width: 100%;
-		}
-
-		td {
-			border: none;
-			border-bottom: 1px solid #000;
-			padding: 10px;
-		}
-
-		td:last-child {
-			border-bottom: none;
-		}
+	.reviews {
+		width: 100%;
+		height: auto;
 	}
 }

@@ -6,100 +6,115 @@
 		<meta
 			name="description"
 			content="Frontend Developer Portfolio showcasing projects, articles, and contact information" />
-		<title>Frontend Developer</title>
 		<link rel="stylesheet" href="styles.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Hind&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Hind&display=swap" rel="stylesheet" />
 	</head>
 	<body>
 		<!-- Navigation Bar -->
-		<header style="display: flex; justify-content: space-between; align-items: center; padding: 10px">
-			<div>Mariia Slivca</div>
+		<header class="header">
+			<div class="logo">Mariia Slivca</div>
 			<nav>
-				<ul style="display: flex; list-style: none; gap: 5px; margin: 0; padding: 0">
-					<li><a class="a-none-decoration"" href="home.html">Home /</a></li>
-					<li><a class="a-none-decoration"" href="projects.html">Projects /</a></li>
-					<li><a class="a-none-decoration"" href="articles.html">Articles /</a></li>
-					<li><a class="a-none-decoration"" href="contact.html">Contact</a></li>
+				<ul class="nav-list">
+					<li><a class="nav-link" href="home.html">Home /</a></li>
+					<li><a class="nav-link" href="projects.html">Projects /</a></li>
+					<li><a class="nav-link" href="articles.html">Articles /</a></li>
+					<li><a class="nav-link" href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<!-- Main Content -->
 		<main>
-			<section style="margin-bottom: 50px">
+			<section class="intro">
 				<h1>Frontend Developer</h1>
 				<p class="p-gray">HTML only with proper layout, no styling</p>
 			</section>
+			<section class="projects">
+				<table>
+					<tr>
+						<td class="project-item">
+							<h3>Projects</h3>
+							<ul class="first-ul">
+								<li class="first-li">HTML Only Portfolio</li>
 
-			<table>
-				<tr>
-					<td style="border: 1px solid #000; vertical-align: top">
-						<h3>Projects</h3>
-						<ul style="list-style: none; padding: 0; margin: 0">
-							<li class="first-ul">HTML Only Portfolio</li>
+								<li class="first-li">Calculator</li>
+								<li class="first-li">Quiz App</li>
+								<li class="first-li">Countdown Timer</li>
+								<li class="padding">Product Upcoming Page</li>
+							</ul>
+						</td>
+						<td style="border: 1px solid #000; vertical-align: top">
+							<h3>Work Experience</h3>
+							<p class="padding"><strong>roadmap.sh</strong>: Solved all the frontend projects</p>
+							<p class="padding"><a href="#">Visit my Profile</a></p>
+							<p style="border-top: 1px solid #000; padding: 10px; padding-left: 20px; padding-top: 20px">
+								<strong>Open Source Work</strong>: Contributed to 50 open-source projects. Made my own projects with 200
+								GitHub stars.
+							</p>
+							<p class="padding"><a href="https://github.com/Slivcaa">Visit my GitHub Profile</a></p>
+						</td>
+						<td style="border: 1px solid #000; vertical-align: top">
+							<h3>Education</h3>
+							<p class="padding">Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+							<h3>Courses I took:</h3>
 
-							<li class="first-ul">Calculator</li>
-							<li class="first-ul">Quiz App</li>
-							<li class="first-ul">Countdown Timer</li>
-							<li style="padding: 20px;">Product Upcoming Page</li>
-						</ul>
-					</td>
-					<td style="border: 1px solid #000; vertical-align: top;">
-						<h3>Work Experience</h3>
-						<p class="padding"><strong>roadmap.sh</strong>: Solved all the frontend projects</p>
-						<p class="padding"><a href="#">Visit my Profile</a></p>
-						<p style="border-top: 1px solid #000; padding: 10px; padding-left: 20px; padding-top: 20px;">
-							<strong>Open Source Work</strong>: Contributed to 50 open-source projects. Made my own projects with 200
-							GitHub stars.
-						</p>
-						<p class="padding"><a href="https://github.com/Slivcaa">Visit my GitHub Profile</a></p>
-					</td>
-					<td style="border: 1px solid #000; vertical-align: top;">
-						<h3>Education</h3>
-						<p class="padding">Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
-						<h3>Courses I took:</h3>
-
-						<ul style="list-style: none; padding: 0">
-							<li class = "padding">- Object Oriented Programming</li>
-							<li class = "padding">- Data Structures and Algorithms</li>
-							<li class = "padding">- Web Engineering</li>
-							<li class = "padding">- Artificial Intelligence</li>
-							<li class = "padding">- Human Computer Interaction</li>
-							<li class = "padding">- Computer Graphics</li>
-							<li class = "padding">- Database Management Systems</li>
-							<li class = "padding">- Distributed Database Systems</li>
-							<li class = "padding">- Discrete Mathematics</li>
-						</ul>
-					</td>
-				</tr>
-			</table>
-
+							<ul class="first-ul">
+								<li class="padding-courses">- Object Oriented Programming</li>
+								<li class="padding-courses">- Data Structures and Algorithms</li>
+								<li class="padding-courses">- Web Engineering</li>
+								<li class="padding-courses">- Artificial Intelligence</li>
+								<li class="padding-courses">- Human Computer Interaction</li>
+								<li class="padding-courses">- Computer Graphics</li>
+								<li class="padding-courses">- Database Management Systems</li>
+								<li class="padding-courses">- Distributed Database Systems</li>
+								<li class="padding-courses">- Discrete Mathematics</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</section>
 			<!-- Reviews Section -->
-<h3 style="text-align: left">Reviews from my Teachers</h3>
+			<h3>Reviews from my Teachers</h3>
 			<section class="reviews">
-				
-				<div style="display: flex; justify-content: space-evenly; gap: 2px">
-					<div style="border: 1px solid #000; padding: 20px; border-radius: 10px; text-align: center;  width: 20%">
+				<div class="review">
+					<div class="review-item">
 						<p>John Doe was a brilliant student; always stood out with his assignments.</p>
-						<p class="p-gray"><em>- Jane Doe,<br>Assistant Professor</em></p>
+						<p class="p-gray">
+							<em>- Jane Doe,<br />Assistant Professor</em>
+						</p>
 					</div>
-					<div style="border: 1px solid #000; padding: 20px; border-radius: 10px; width: 20%; text-align: center">
+					<div class="review-item">
 						<p>John Doe was a brilliant student; always stood out with his assignments.</p>
-						<p class="p-gray"><em>- Jane Doe,<br>Assistant Professor</em></p>
+						<p class="p-gray">
+							<em>- Jane Doe,<br />Assistant Professor</em>
+						</p>
 					</div>
-					<div style="border: 1px solid #000; padding: 20px; border-radius: 10px; width: 20%; text-align: center">
+					<div class="review-item">
 						<p>John Doe was a brilliant student; always stood out with his assignments.</p>
-						<p class="p-gray"><em>- Jane Doe,<br>Assistant Professor</em></p>
+						<p class="p-gray">
+							<em>- Jane Doe,<br />Assistant Professor</em>
+						</p>
 					</div>
 				</div>
 			</section>
 		</main>
 
 		<!-- Footer -->
-		<footer style="text-align: center; margin-top: 20px; padding: 10px; font-family: 'Handlee', sans-serif; font-weight: 700;">
+		<footer class="footer">
 			<p>&copy; all rights reserved 2025</p>
 		</footer>
+
+		<script>
+			document.addEventListener('scroll', () => {
+				const header = document.querySelector('.header');
+				if (window.scrollY > 50) {
+					header.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+				} else {
+					header.style.boxShadow = 'none';
+				}
+			});
+		</script>
 	</body>
 </html>
