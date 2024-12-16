@@ -25,28 +25,31 @@
 		</header>
 		<!-- Main Content -->
 		<main>
-			<section style="text-align: center">
-				<h1>Contact</h1>
-				<form action="#" method="post">
-					<div style="padding: 20px">
-						<label for="name">Name:</label>
-						<input type="text" id="name" name="name" required />
-					</div>
+			<div class="center-container">
+				<section class="contact">
+					<h1>Contact</h1>
+					<form action="#" method="post" class="contact-form">
+						<div>
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required />
+						</div>
 
-					<div style="padding: 20px">
-						<label for="email">Email:</label>
-						<input type="email" id="email" name="email" required />
-					</div>
+						<div>
+							<label for="email">Email:</label>
+							<input type="email" id="email" name="email" required />
+						</div>
 
-					<div style="padding: 20px">
-						<label for="message">Message:</label>
-						<textarea id="message" name="message" required></textarea>
-					</div>
-					<div style="padding: 20px">
-						<button type="submit">Send</button>
-					</div>
-				</form>
-			</section>
+						<div>
+							<label for="message">Message:</label>
+							<textarea id="message" name="message" required></textarea>
+						</div>
+
+						<div>
+							<button type="submit">Send</button>
+						</div>
+					</form>
+				</section>
+			</div>
 		</main>
 
 		<!-- Footer -->
@@ -61,5 +64,22 @@
 			">
 			<p>&copy; all rights reserved 2025</p>
 		</footer>
+		<script>
+			document.addEventListener('scroll', () => {
+				const header = document.querySelector('.header');
+				if (window.scrollY > 50) {
+					header.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+				} else {
+					header.style.boxShadow = 'none';
+				}
+			});
+		</script>
+		<script>
+			document.querySelector('.contact-form').addEventListener('submit', function (event) {
+				event.preventDefault();
+				alert('Thank you for your message! I will get back to you soon.');
+				this.reset();
+			});
+		</script>
 	</body>
 </html>

@@ -25,41 +25,55 @@
 		</header>
 		<!-- Main Content -->
 		<main>
-			<section class="intro">
-				<h1>Projects</h1>
-				<div>
-					<h2>HTML Portfolio</h2>
-					<p>
-						A basic portfolio website built using only HTML. Demonstrates understanding of semantic tags and structure.
-					</p>
-					<a href="#">View Project</a>
-				</div>
-				<div>
-					<h2>Calculator</h2>
-					<p>A simple calculator web application built with JavaScript, demonstrating basic DOM manipulation.</p>
-					<a href="#">View Project</a>
-				</div>
-				<div>
-					<h2>Quiz App</h2>
-					<p>An interactive quiz application featuring multiple-choice questions and score tracking.</p>
-					<a href="#">View Project</a>
-				</div>
-				<div>
-					<h2>Countdown Timer</h2>
-					<p>A countdown timer application that can be customized for various events and uses.</p>
-					<a href="#">View Project</a>
-				</div>
-				<div>
-					<h2>Product Launch Page</h2>
-					<p>A responsive landing page designed for promoting upcoming products or events.</p>
-					<a href="#">View Project</a>
-				</div>
-			</section>
+			<div class="center-container">
+				<section class="projects">
+					<h1>Projects</h1>
+					<div>
+						<h2>HTML Portfolio</h2>
+						<p>
+							A basic portfolio website built using only HTML. Demonstrates understanding of semantic tags and
+							structure.
+						</p>
+						<a href="#">View Project</a>
+					</div>
+					<div>
+						<h2>Calculator</h2>
+						<p>A simple calculator web application built with JavaScript, demonstrating basic DOM manipulation.</p>
+						<a href="#">View Project</a>
+					</div>
+					<div>
+						<h2>Quiz App</h2>
+						<p>An interactive quiz application featuring multiple-choice questions and score tracking.</p>
+						<a href="#">View Project</a>
+					</div>
+					<div>
+						<h2>Countdown Timer</h2>
+						<p>A countdown timer application that can be customized for various events and uses.</p>
+						<a href="#">View Project</a>
+					</div>
+					<div>
+						<h2>Product Launch Page</h2>
+						<p>A responsive landing page designed for promoting upcoming products or events.</p>
+						<a href="#">View Project</a>
+					</div>
+				</section>
+			</div>
 		</main>
 
 		<!-- Footer -->
 		<footer class="footer">
 			<p>&copy; all rights reserved 2025</p>
 		</footer>
+
+		<script>
+			document.addEventListener('scroll', () => {
+				const header = document.querySelector('.header');
+				if (window.scrollY > 50) {
+					header.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
+				} else {
+					header.style.boxShadow = 'none';
+				}
+			});
+		</script>
 	</body>
 </html>

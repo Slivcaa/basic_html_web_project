@@ -1,5 +1,11 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 h1 {
-	padding-top: 20px;
+	padding: 30px;
 	font-family: 'Handlee', sans-serif;
 	font-size: 40px;
 	letter-spacing: 4px;
@@ -12,16 +18,31 @@ h1 {
 
 .projects {
 	padding-top: 20px;
+	text-align: center;
+}
+
+.projects h1 {
+	font-family: 'Handlee', cursive;
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+	color: #333;
 }
 
 h3 {
 	padding-top: 20px;
 	padding-left: 20px;
+	padding-bottom: 10px;
 	font-family: 'Handlee', sans-serif;
 }
 
+main {
+	flex: 1;
+}
 body {
 	font-family: 'Hind', sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 .header {
@@ -89,6 +110,7 @@ table {
 
 .padding-courses {
 	padding-left: 20px;
+	padding-bottom: 5px;
 }
 
 .reviews {
@@ -115,6 +137,83 @@ table {
 	font-size: 14px;
 }
 
+.articles {
+	text-align: center;
+}
+
+.articles h1 {
+	font-family: 'Handlee', cursive;
+	font-size: 2.5rem;
+	margin-bottom: 50px;
+	color: #333;
+}
+
+.center-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+}
+
+.contact h1 {
+	font-family: 'Handlee', cursive;
+	font-size: 2.5rem;
+	margin-bottom: 50px;
+	color: #333;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	margin: 0 auto;
+	align-items: center;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.contact-form div {
+	display: flex;
+	align-items: center;
+}
+
+.contact-form label {
+	width: 80px;
+	margin-right: 10px;
+	text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+	flex: 1;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.contact-form button {
+	width: 100px;
+	margin-top: 20px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 18px;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+	background-color: #0056b3;
+}
 .footer {
 	text-align: center;
 	margin-top: 20px;
