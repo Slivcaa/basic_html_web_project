@@ -14,7 +14,13 @@
 		<!-- Navigation Bar -->
 		<header class="header">
 			<div class="logo">Mariia Slivca</div>
-			<nav>
+			<div class="hamburger" id="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<nav class="nav-menu" id="nav-menu">
 				<ul class="nav-list">
 					<li><a class="nav-link" href="home.html">Home /</a></li>
 					<li><a class="nav-link" href="projects.html">Projects /</a></li>
@@ -73,6 +79,14 @@
 				} else {
 					header.style.boxShadow = 'none';
 				}
+			});
+		</script>
+		<script>
+			const hamburger = document.getElementById('hamburger');
+			const navMenu = document.getElementById('nav-menu');
+
+			hamburger.addEventListener('click', () => {
+				navMenu.classList.toggle('active');
 			});
 		</script>
 	</body>
