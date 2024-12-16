@@ -14,6 +14,7 @@ This project demonstrates the HTML structure for a portfolio website. It is desi
    - `home.html` for the homepage.
    - `articles.html` for the articles page.
    - `contact.html` for the contact page.
+   - `projects.html` for the projects page.
 
 3. **Modify the Content (Optional):**
    You can edit the `.html` files to update content as per your needs. Use a text editor like Visual Studio Code.
@@ -24,6 +25,7 @@ This project demonstrates the HTML structure for a portfolio website. It is desi
 project-folder/
 ├── home.html      # Homepage
 ├── articles.html   # Articles page
+├── projects.html   # Projects page
 ├── contact.html    # Contact page
 └── README.md       # Instructions
 ```
