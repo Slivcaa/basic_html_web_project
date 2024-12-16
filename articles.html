@@ -52,6 +52,9 @@
 					</article>
 				</section>
 			</div>
+			<div class="toggle-articles">
+				<button id="toggle-articles">Show/Hide Articles</button>
+			</div>
 		</main>
 
 		<!-- Footer -->
@@ -66,6 +69,16 @@
 					header.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
 				} else {
 					header.style.boxShadow = 'none';
+				}
+			});
+		</script>
+		<script>
+			document.getElementById('toggle-articles').addEventListener('click', () => {
+				const projects = document.querySelector('.articles');
+				if (projects.style.display === 'none' || projects.style.display === '') {
+					projects.style.display = 'block';
+				} else {
+					projects.style.display = 'none';
 				}
 			});
 		</script>
