@@ -1,6 +1,8 @@
 # basic_html_web_project
 
-This project demonstrates the HTML structure for a portfolio website. It is designed to teach how to structure a website using HTML, including multiple pages, semantic tags, and SEO meta tags.
+This project demonstrates the HTML structure for a portfolio website. It is designed to teach how to structure a website using HTML, including multiple pages, semantic tags, and SEO meta tags. 
+
+URL of the project: https://roadmap.sh/projects/basic-html-website
 
 ## Instructions to Run the Project
 
